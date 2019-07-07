@@ -18,4 +18,6 @@ before_install:
 gemfile:
   - Gemfile
 
-script: bundle exec rake spec
+script:
+  - bundle exec rake pod:install
+  - bundle exec rake spec
