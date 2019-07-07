@@ -9,6 +9,7 @@ require 'rubygems'
 begin
   require 'bundler'
   testing ? Bundler.require(:default, :spec) : Bundler.require
+  require 'motion/project/template/gem/gem_tasks'
 rescue LoadError
 end
 
