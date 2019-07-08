@@ -11,6 +11,17 @@ We use [HTMLKit](https://github.com/iabudiab/HTMLKit) to take the place of Nokog
 
 Below is a copy of the original README file, until I'm able to flesh this one out more.
 
+But you can build a pipeline like this:
+
+```ruby
+pipeline = MotionHTMLPipeline::Pipeline.new [
+  MotionHTMLPipeline::Pipeline::HttpsFilter,
+  MotionHTMLPipeline::Pipeline::ImageMaxWidthFilter
+]
+result = pipeline.call("<a href='http://example.com/one.png'>link</a> <img src='one.png'>", {http_url: 'http://example.com'})
+result[:output].to_s
+```
+
 ---
 # HTML::Pipeline
 
