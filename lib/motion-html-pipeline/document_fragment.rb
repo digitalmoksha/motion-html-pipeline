@@ -4,7 +4,7 @@
 # Not meant to duplicate Nokogiri completely, just add a similar interface
 #------------------------------------------------------------------------------
 module MotionHTMLPipeline
-  class DocumentFragment < HTMLDocument
+  class DocumentFragment
     attr_reader :document
 
     def self.parse(html)

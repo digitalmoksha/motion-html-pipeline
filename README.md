@@ -212,6 +212,8 @@ Now this filter can be used in a pipeline:
 Pipeline.new [ RootRelativeFilter ], { base_url: 'http://somehost.com' }
 ```
 
+We use [HTMLKit](https://github.com/iabudiab/HTMLKit) for document parsing in `MotionHTMLPipeline::DocumentFragment`.
+
 ### 3rd Party Extensions
 
 Many people have built their own filters for [html-pipeline](https://github.com/jch/html-pipeline/issues).  Although these have not been converted to run with RubyMotion, most of them should be easy convert.
