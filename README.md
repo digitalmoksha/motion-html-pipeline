@@ -3,7 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/motion-html-pipeline.svg)](http://badge.fury.io/rb/motion-html-pipeline)
 [![Build Status](https://travis-ci.org/digitalmoksha/motion-html-pipeline.svg?branch=master)](https://travis-ci.org/digitalmoksha/motion-html-pipeline)
 
-_This gem is a port of the [`html-pipeline` gem](https://github.com/jch/html-pipeline) to RubyMotion, for use on iOS and macOS. Currently synced with `html-pipeline` release [`v.2.11.0`](https://github.com/jch/html-pipeline/releases/tag/v2.11.0)_
+_This gem is a port of the [`html-pipeline` gem](https://github.com/jch/html-pipeline) to RubyMotion, for use on iOS and macOS. Currently synced with `html-pipeline` release [`v.2.12.3`](https://github.com/jch/html-pipeline/releases/tag/v2.12.3)_
 
 GitHub HTML processing filters and utilities. This module includes a small
 framework for defining DOM based content filters and applying them to user
@@ -164,6 +164,7 @@ EmojiPipeline = Pipeline.new [
 Several of the standard filters, such as `AutolinkFilter` and `EmojiFilter`, are initially disabled, as they rely on other Ruby gems that don't have RubyMotion equivalents.  Please feel free to submit a pull request that enables any of them.
 
 * `MentionFilter` - replace `@user` mentions with links
+* `TeamMentionFilter` - replace `@org/team` mentions with links
 * `AutolinkFilter` - auto_linking urls in HTML
 * `CamoFilter` - replace http image urls with [camo-fied](https://github.com/atmos/camo) https versions
 * `EmailReplyFilter` - util filter for working with emails

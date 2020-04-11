@@ -1,5 +1,4 @@
-# require 'nokogiri'
-# require 'active_support/xml_mini/nokogiri' # convert Documents to hashes
+# frozen_string_literal: true
 
 module MotionHTMLPipeline
   # GitHub HTML processing filters and utilities. This module includes a small

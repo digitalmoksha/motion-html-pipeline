@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # describe 'MotionHTMLPipeline::Pipeline::SanitizationFilterTest' do
 #   SanitizationFilter = MotionHTMLPipeline::Pipeline::SanitizationFilter
 #

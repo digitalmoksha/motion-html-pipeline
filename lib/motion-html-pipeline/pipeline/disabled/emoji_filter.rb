@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # require 'cgi'
 # MotionHTMLPipeline::Pipeline.require_dependency('gemoji', 'EmojiFilter')
 #

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Add following abilities
 #
 #   rake spec filter="name of spec"                   # To filter by spec name

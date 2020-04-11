@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'MotionHTMLPipeline::Pipeline::ImageMaxWidthFilterTest' do
   def filter(html)
     MotionHTMLPipeline::Pipeline::ImageMaxWidthFilter.call(html)

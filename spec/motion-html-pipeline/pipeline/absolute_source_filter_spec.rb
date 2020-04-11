@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'MotionHTMLPipeline::Pipeline::AbsoluteSourceFilterTest' do
   AbsoluteSourceFilter = MotionHTMLPipeline::Pipeline::AbsoluteSourceFilter
 

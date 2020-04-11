@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module MotionHTMLPipeline
   class Pipeline
     class AbsoluteSourceFilter < Filter

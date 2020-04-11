@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AppDelegate
   # OS X entry point
   #------------------------------------------------------------------------------

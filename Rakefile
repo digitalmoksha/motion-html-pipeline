@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 $:.unshift("/Library/RubyMotion/lib")
 
 platform = ENV.fetch('platform', 'osx')

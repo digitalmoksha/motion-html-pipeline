@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # describe 'MotionHTMLPipeline::Pipeline::PlainTextInputFilterTest' do
 #   PlainTextInputFilter = MotionHTMLPipeline::Pipeline::PlainTextInputFilter
 #
