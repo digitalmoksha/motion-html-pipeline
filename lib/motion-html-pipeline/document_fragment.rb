@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Gives a Nokogiri type of interface, but uses
 # HTMLKit (https://github.com/iabudiab/HTMLKit)
 #

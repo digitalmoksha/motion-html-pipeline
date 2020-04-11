@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require File.expand_path('../lib/motion-html-pipeline/pipeline/version.rb', __FILE__)
 
 Gem::Specification.new do |spec|

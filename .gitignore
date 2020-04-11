@@ -6,3 +6,4 @@ build
 debugger_cmds
 Gemfile.lock
 vendor
+.idea

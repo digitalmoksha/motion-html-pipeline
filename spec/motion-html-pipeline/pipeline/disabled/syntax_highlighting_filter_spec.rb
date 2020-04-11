@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # describe 'MotionHTMLPipeline::Pipeline::SyntaxHighlightFilterTest' do
 #   SyntaxHighlightFilter = MotionHTMLPipeline::Pipeline::SyntaxHighlightFilter
 #
@@ -6,6 +8,7 @@
 #       '<pre>hello</pre>', highlight: 'coffeescript'
 #
 #     doc = filter.call
+#     assert !doc.css('.highlight').empty?
 #     assert !doc.css('.highlight-coffeescript').empty?
 #   end
 #

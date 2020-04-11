@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # describe 'MotionHTMLPipeline::Pipeline::AutolinkFilterTest' do
 #   AutolinkFilter = MotionHTMLPipeline::Pipeline::AutolinkFilter
 #

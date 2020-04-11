@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module MotionHTMLPipeline
   class Pipeline
     # HTML Filter for replacing http references to :http_url with https versions.

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # describe 'MotionHTMLPipeline::Pipeline::EmojiFilterTest' do
 #   EmojiFilter = MotionHTMLPipeline::Pipeline::EmojiFilter
 #

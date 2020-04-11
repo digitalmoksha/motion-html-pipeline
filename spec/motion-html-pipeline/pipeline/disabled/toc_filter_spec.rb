@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # describe 'MotionHTMLPipeline::Pipeline::TableOfContentsFilterTest' do
 #   TocFilter = MotionHTMLPipeline::Pipeline::TableOfContentsFilter
 #

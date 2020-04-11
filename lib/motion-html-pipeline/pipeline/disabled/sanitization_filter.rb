@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # MotionHTMLPipeline::Pipeline.require_dependency('sanitize', 'SanitizationFilter')
 #
 # module MotionHTMLPipeline

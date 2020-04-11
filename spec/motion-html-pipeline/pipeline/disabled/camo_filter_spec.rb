@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # describe 'MotionHTMLPipeline::Pipeline::CamoFilterTest' do
 #   CamoFilter = MotionHTMLPipeline::Pipeline::CamoFilter
 #
