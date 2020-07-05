@@ -2,6 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/motion-html-pipeline.svg)](http://badge.fury.io/rb/motion-html-pipeline)
 [![Build Status](https://travis-ci.org/digitalmoksha/motion-html-pipeline.svg?branch=master)](https://travis-ci.org/digitalmoksha/motion-html-pipeline)
+[![Platform](https://img.shields.io/badge/platform-macos%20|%20ios-lightgrey.svg)](https://shields.io/)
+[![Language](https://img.shields.io/badge/language-RubyMotion-red.svg)](http://www.rubymotion.com)
 
 _This gem is a port of the [`html-pipeline` gem](https://github.com/jch/html-pipeline) to RubyMotion, for use on iOS and macOS. Currently synced with `html-pipeline` release [`v.2.12.3`](https://github.com/jch/html-pipeline/releases/tag/v2.12.3)_
 
@@ -64,7 +66,7 @@ would output
 
 Filters can be combined into a pipeline which causes each filter to hand its
 output to the next filter's input. So if you wanted to have content be
-filtered through the `ImageFilter` and then wrap it in an `<a>` tag with 
+filtered through the `ImageFilter` and then wrap it in an `<a>` tag with
 a max-width inline style:
 
 ```ruby
@@ -243,7 +245,7 @@ Here are some extensions people have built:
 
 ## Instrumenting
 
-_Although instrumenting was ported, it has not been used real-world, and may not work 
+_Although instrumenting was ported, it has not been used real-world, and may not work
 properly at this time._
 
 Filters and Pipelines can be set up to be instrumented when called. The pipeline
