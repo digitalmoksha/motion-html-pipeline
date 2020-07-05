@@ -1,9 +1,10 @@
 language: objective-c
 osx_image: xcode11.5
 env:
-  - RUBYMOTION_LICENSE=1dcac45cc434293009f74b33037bdf7361a3a1ff # Official license key for open-source projects
-  - TMP_DIR=./tmp # For motion repo, so it doesn't attempt to use /tmp, to which it has no access
-  - OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+  global:
+    - RUBYMOTION_LICENSE=1dcac45cc434293009f74b33037bdf7361a3a1ff # Official license key for open-source projects
+    - TMP_DIR=./tmp # For motion repo, so it doesn't attempt to use /tmp, to which it has no access
+    - OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 before_install:
   - brew update
@@ -20,6 +21,7 @@ before_install:
   - (motion --version)
   - (ruby --version)
   - motion repo
+  - bundle install
   - bundle exec rake pod:install
 
 gemfile:
