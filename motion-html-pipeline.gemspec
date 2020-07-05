@@ -19,6 +19,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'motion-cocoapods'
 
-  spec.add_development_dependency 'rake'
   spec.add_development_dependency 'motion-expect', '~> 2.0' # required for Travis build to work
 end
