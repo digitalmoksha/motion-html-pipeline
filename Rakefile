@@ -9,6 +9,8 @@ testing  = true if ARGV.join(' ') =~ /spec/
 require "motion/project/template/#{platform}"
 require 'rubygems'
 
+raise 'export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES' unless ENV['OBJC_DISABLE_INITIALIZE_FORK_SAFETY'] == 'YES'
+
 begin
   require 'bundler'
   testing ? Bundler.require(:default, :spec) : Bundler.require
@@ -27,6 +29,9 @@ Motion::Project::App.setup do |app|
     # which is the latest non-beta
     app.sdk_version           = '13.5'
     app.deployment_target     = '13.5'
+  else
+    app.sdk_version           = '11.1'
+    app.deployment_target     = '11.1'
   end
 
   app.detect_dependencies = true
