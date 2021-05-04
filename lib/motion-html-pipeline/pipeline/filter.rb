@@ -66,6 +66,7 @@ module MotionHTMLPipeline
       # called.
       def html
         raise InvalidDocumentException if @html.nil? && @doc.nil?
+
         @html || doc.to_html
       end
 

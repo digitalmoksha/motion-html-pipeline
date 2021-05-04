@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
 # frozen_string_literal: true
-$:.unshift("/Library/RubyMotion/lib")
-$:.unshift("~/.rubymotion/rubymotion-templates")
+
+$LOAD_PATH.unshift('/Library/RubyMotion/lib')
+$LOAD_PATH.unshift('~/.rubymotion/rubymotion-templates')
 
 platform = ENV.fetch('platform', 'osx')
 testing  = true if ARGV.join(' ') =~ /spec/

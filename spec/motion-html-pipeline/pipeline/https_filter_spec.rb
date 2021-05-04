@@ -48,7 +48,7 @@ describe 'MotionHTMLPipeline::Pipeline::HttpsFilter' do
   it 'test_validates_http_url' do
     @options.clear
 
-    expect{ filter('') }
+    expect { filter('') }
       .to raise_error(ArgumentError, 'MotionHTMLPipeline::Pipeline::HttpsFilter: :http_url')
   end
 end

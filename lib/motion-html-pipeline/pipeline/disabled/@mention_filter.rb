@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# TODO Requires Set (or something similar)
+# TODO: Requires Set (or something similar)
 #------------------------------------------------------------------------------
 # require 'set'
 #

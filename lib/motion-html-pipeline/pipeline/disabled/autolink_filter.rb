@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# TODO Requires Rinku gem (or something similar)
+# TODO: Requires Rinku gem (or something similar)
 #------------------------------------------------------------------------------
 # module MotionHTMLPipeline
 #   class Pipeline
