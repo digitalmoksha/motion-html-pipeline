@@ -30,8 +30,8 @@ Motion::Project::App.setup do |app|
     app.sdk_version           = '13.5'
     app.deployment_target     = '13.5'
   else
-    app.sdk_version           = '11.1'
-    app.deployment_target     = '11.1'
+    app.sdk_version           = '11.0'
+    app.deployment_target     = '11.0'
   end
 
   app.detect_dependencies = true
