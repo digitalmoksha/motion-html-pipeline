@@ -35,15 +35,15 @@ describe 'MotionHTMLPipeline::Pipeline::AbsoluteSourceFilterTest' do
   end
 
   it 'test_fails_when_context_is_missing' do
-    expect{ AbsoluteSourceFilter.call('<img src="img.png">', {}) }.to raise_error(RuntimeError)
-    expect{ AbsoluteSourceFilter.call('<img src="/img.png">', {}) }.to raise_error(RuntimeError)
+    expect { AbsoluteSourceFilter.call('<img src="img.png">', {}) }.to raise_error(RuntimeError)
+    expect { AbsoluteSourceFilter.call('<img src="/img.png">', {}) }.to raise_error(RuntimeError)
   end
 
   it 'test_tells_you_where_context_is_required' do
-    expect{ AbsoluteSourceFilter.call('<img src="img.png">', {}) }
+    expect { AbsoluteSourceFilter.call('<img src="img.png">', {}) }
       .to raise_error(RuntimeError, 'MotionHTMLPipeline::Pipeline::AbsoluteSourceFilter')
 
-    expect{ AbsoluteSourceFilter.call('<img src="/img.png">', {}) }
+    expect { AbsoluteSourceFilter.call('<img src="/img.png">', {}) }
       .to raise_error(RuntimeError, 'MotionHTMLPipeline::Pipeline::AbsoluteSourceFilter')
   end
 end

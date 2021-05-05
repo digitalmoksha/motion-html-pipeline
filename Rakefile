@@ -1,13 +1,15 @@
-# -*- coding: utf-8 -*-
 # frozen_string_literal: true
-$:.unshift("/Library/RubyMotion/lib")
-$:.unshift("~/.rubymotion/rubymotion-templates")
+
+$LOAD_PATH.unshift('/Library/RubyMotion/lib')
+$LOAD_PATH.unshift('~/.rubymotion/rubymotion-templates')
 
 platform = ENV.fetch('platform', 'osx')
 testing  = true if ARGV.join(' ') =~ /spec/
 
 require "motion/project/template/#{platform}"
 require 'rubygems'
+
+raise 'export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES' unless ENV['OBJC_DISABLE_INITIALIZE_FORK_SAFETY'] == 'YES'
 
 begin
   require 'bundler'
@@ -27,6 +29,9 @@ Motion::Project::App.setup do |app|
     # which is the latest non-beta
     app.sdk_version           = '13.5'
     app.deployment_target     = '13.5'
+  else
+    app.sdk_version           = '11.0'
+    app.deployment_target     = '11.0'
   end
 
   app.detect_dependencies = true

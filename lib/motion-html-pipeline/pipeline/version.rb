@@ -2,6 +2,6 @@
 
 module MotionHTMLPipeline
   class Pipeline
-    VERSION = '0.3'.freeze
+    VERSION = '0.4.2'
   end
 end

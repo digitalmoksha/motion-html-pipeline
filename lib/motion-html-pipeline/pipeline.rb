@@ -42,8 +42,10 @@ module MotionHTMLPipeline
 
     # Public: String name for this Pipeline. Defaults to Class name.
     attr_writer :instrumentation_name
+
     def instrumentation_name
       return @instrumentation_name if defined?(@instrumentation_name)
+
       @instrumentation_name = self.class.name
     end
 
@@ -54,6 +56,7 @@ module MotionHTMLPipeline
 
     def initialize(filters, default_context = {}, result_class = nil)
       raise ArgumentError, 'default_context cannot be nil' if default_context.nil?
+
       @filters = filters.flatten.freeze
       @default_context = default_context.freeze
       @result_class = result_class || Hash
@@ -132,12 +135,11 @@ module MotionHTMLPipeline
     # block, otherwise the block is ran without instrumentation.
     #
     # Returns the result of the provided block.
-    def instrument(event, payload = nil)
+    def instrument(event, payload = nil, &block)
       payload ||= default_payload
       return yield(payload) unless instrumentation_service
-      instrumentation_service.instrument event, payload do |payload|
-        yield payload
-      end
+
+      instrumentation_service.instrument event, payload, &block
     end
 
     # Internal: Default payload for instrumentation.

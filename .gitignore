@@ -1,9 +1,11 @@
+.bundle
+.idea
+.repl_history
+build
+build-log
+debugger_cmds
+Gemfile.lock
 htmldoc
 pkg
 webgen-tmp
-build
-.repl_history
-debugger_cmds
-Gemfile.lock
 vendor
-.idea

@@ -19,8 +19,10 @@ module MotionHTMLPipeline
       def call
         doc.css('img').each do |element|
           next if element['src'].nil? || element['src'].empty?
+
           src = element['src'].strip
           next if src.start_with? 'http'
+
           base = if src.start_with? '/'
                    image_base_url
                  else

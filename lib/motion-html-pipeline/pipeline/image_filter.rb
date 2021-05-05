@@ -10,7 +10,7 @@ module MotionHTMLPipeline
 
     class ImageFilter < TextFilter
       def call
-        @text.gsub(/(https|http)?:\/\/.+\.(jpg|jpeg|bmp|gif|png)(\?\S+)?/i) do |match|
+        @text.gsub(%r{(https|http)?://.+\.(jpg|jpeg|bmp|gif|png)(\?\S+)?}i) do |match|
           %(<img src="#{match}" alt=""/>)
         end
       end

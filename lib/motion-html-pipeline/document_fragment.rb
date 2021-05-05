@@ -24,6 +24,6 @@ module MotionHTMLPipeline
     def to_html
       document.body.innerHTML
     end
-    alias :to_s :to_html
+    alias to_s to_html
   end
 end
